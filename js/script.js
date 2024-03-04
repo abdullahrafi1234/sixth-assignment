@@ -45,10 +45,12 @@ const displayCards = posts => {
                     <span class="font-medium text-[#13131880]">${post.posted_time
                     } min</span>
                 </p>
-                <p class="flex gap-2">
-                    <img src="Images/email 1.png" alt="">
-                                    
-                </p>
+                <button onclick="clickSeat()" id="A1">
+                                    <p class="flex gap-2">
+                                        <img src="Images/email 1.png" alt="">
+
+                                    </p>
+                                </button>
             </div>
         </div>
         
@@ -60,6 +62,56 @@ const displayCards = posts => {
     })
 
 }
+
+
+
+function clickSeat(){
+    const btn = document.getElementById('A1')
+    // console.log(backgroundChange)
+
+    btn.addEventListener('click', function(event){
+        
+        const name = event.target.parentNode.parentNode.parentNode.parentNode.childNodes[3].innerText
+
+
+        const view2 = event.target.parentNode.parentNode.parentNode.childNodes[3].childNodes[3].innerText
+
+        const appendContainer = document.getElementById('append-container')
+
+
+
+
+        const div = document.createElement('div')
+        div.classList= `
+        flex justify-between bg-white p-5 mt-4 mb-4 rounded-lg font-semibold `
+        const p1 = document.createElement('p')
+        const p3 = document.createElement('p')
+
+
+        p1.innerText = name;
+        p3.innerText = view2;
+
+        div.appendChild(p1)
+        div.appendChild(p3)
+
+        appendContainer.appendChild(div)
+
+
+
+        const cartCount = getConvertedValue('current-count')
+
+        document.getElementById('current-count').innerText = cartCount + 1
+        // console.log(div)
+    })
+}
+
+
+
+function getConvertedValue(id){
+    const price =document.getElementById(id).innerText
+    const convertPrice = parseInt(price)
+    return convertPrice;
+    }
 
 
 
