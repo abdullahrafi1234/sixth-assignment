@@ -19,7 +19,7 @@ const displayLatestCard = posts => {
         <div class="card-body text-[#12132D99]">
         <h2 class="flex gap-2"> 
             <span><img src="images/calender.png" alt=""></span>
-            ${post.author.posted_date
+            ${post.author?.posted_date || 'No Publish Date'
             }</h2>
 
         <p class="text-[#12132D] text-[18px] font-extrabold">${post.title}</p>
@@ -30,7 +30,7 @@ const displayLatestCard = posts => {
 
             <div>
                 <p class="font-bold text-[#12132D] ">${post.author.name}</p>
-                <p class="text-[#12132D99]">${post.author.designation
+                <p class="text-[#12132D99]">${post.author?.designation || 'Unknown'
                 }</p>
             </div>
         </h2>
