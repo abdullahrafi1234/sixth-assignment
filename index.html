@@ -14,89 +14,238 @@
 
 </head>
 
-<body class="font-mulish mt-4">
-    <header class="container mx-auto">
+<body class="font-mulish ">
+    <header class="container mx-auto mt-6">
         <!-- navbar -->
         <div class="navbar bg-base-100 gap-2">
             <div class="flex-1">
-              <a class="btn btn-ghost text-3xl font-extrabold ">CHaTushKon</a>
+                <a class="btn btn-ghost text-3xl font-extrabold ">CHaTushKon</a>
             </div>
-            <div class="flex-none">
-              <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                  <div class="indicator">
-                    <img src="images/Frame 2.png" alt="">
-                    <span class="badge badge-sm indicator-item"></span>
-                  </div>
-                </div>
-                
-              </div>
-            </div>
+
             <!-- icon 1 -->
             <div class="flex-none">
-              <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                  <div class="indicator">
-                    <img src="images/Frame 2.png" alt="">
-                    <span class="badge badge-sm indicator-item"></span>
-                  </div>
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <div class="indicator tooltip" data-tip="Home">
+                            <img src="images/Frame 2.png" alt="">
+
+                        </div>
+                    </div>
+
                 </div>
-                
-              </div>
             </div>
             <!-- icon 2 -->
             <div class="flex-none">
-              <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                  <div class="indicator">
-                    <img src="images/Frame 3.png" alt="">
-                    <span class="badge badge-sm indicator-item"></span>
-                  </div>
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <div class="indicator tooltip" data-tip="Blog">
+                            <img src="images/Frame 3.png" alt="">
+
+                        </div>
+                    </div>
+
                 </div>
-                
-              </div>
             </div>
             <!-- icon 3 -->
             <div class="flex-none">
-              <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                  <div class="indicator">
-                    <img src="images/Frame 4.png" alt="">
-                    <span class="badge badge-sm indicator-item"></span>
-                  </div>
+                <div class="dropdown dropdown-end lg:tooltip" data-tip="hello">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle ">
+                        <div class="indicator tooltip" data-tip="Contracts">
+                            <img src="images/Frame 4.png" alt="">
+
+                        </div>
+                    </div>
+
                 </div>
-                
-              </div>
             </div>
             <!-- icon 4 -->
             <div class="flex-none">
-              <div class="dropdown dropdown-end">
-                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                  <div class="indicator">
-                    <img src="images/Frame 5.png" alt="">
-                    <span class="badge badge-sm indicator-item"></span>
-                  </div>
+                <div class="dropdown dropdown-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <div class="indicator tooltip" data-tip="More">
+                            <img src="images/Frame 5.png" alt="">
+
+                        </div>
+                    </div>
+
                 </div>
-                
-              </div>
             </div>
             <!-- btn -->
             <div class="">
                 <a class="btn bg-[#797DFC] rounded-full font-bold  text-white">Sign In</a>
-              </div>
-          </div>
+            </div>
+        </div>
 
+        <!-- background or banner section -->
+
+        <section class=" mt-2 bg-[#12132D] rounded-3xl ">
+            <div class="text-white flex lg:flex-row sm: flex-col justify-between m-28 items-center gap-40">
+                <div class="mt-40 lg:mb-40  space-y-8">
+                    <h3 class="text-6xl font-black  ">Welcome to the <br>
+                        <span class="text-[#797DFC]"> CHaTushKon</span> Forum
+                    </h3>
+                    <p class="">Share your favorite opinion and win and wp <br> forum coffee mug!</p>
+
+                    <!-- search btn -->
+                    <!-- <input type="text" placeholder="Type here" class="input p-3 rounded-lg  w-full max-w-xs" />
+                    <button class="btn btn-gost bg-[#797DFC] text-white">Search</button> -->
+                    <p>
+                    <div class="text-black bg-white flex justify-between w-[400px] mt-6 rounded-2xl p-2">
+                        <input type="text" placeholder="Type here" class="input p-3 rounded-lg  w-full max-w-xs" />
+                        <button class="btn  bg-[#797DFC] text-white">Search</button>
+                    </div>
+                    </p>
+
+
+                </div>
+                <!-- banner right side  -->
+                <div class="text-black flex space-x-2 bg-white p-12 rounded-xl lg:mt-40 lg:mb-40">
+                    <div class="text-2xl font-medium">
+                        <p>Registered Users</p>
+                        <p>Forum</p>
+                        <p>Topics</p>
+                        <p>Replies</p>
+                    </div>
+                    <div class="text-2xl font-medium">
+                        <p>01</p>
+                        <p>01</p>
+                        <p>01</p>
+                        <p>01</p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="relative">
+                <img class="absolute -mt-[480px] bg-repeat-x " src="images/bgbanner.png" alt="">
+
+            </div> -->
+        </section>
     </header>
+    <!-- main section -->
+    <main class="container mx-auto mt-20">
+        <!-- Let’s Discuss section -->
+        <section>
+            <h3 class="text-[40px] font-black text-[#12132D] text-center m-4">Let's Discuss</h3>
+            <p class="text-[#12132D99] text-center">Yes, you can run unit tests and view the results directly within the
+                app. <br>
+                The integrated testing features allow for a streamlined .</p>
+            <!-- parent div -->
+            <div id="card-container" class="flex flex-col lg:flex-row justify-between gap-20">
+                <!-- card div -->
+                <div>
 
-    <main>
+                    <!-- card 1 -->
+                    <div
+                        class="card flex flex-col lg:flex-row card-side bg-base-100 shadow-xl p-4 border border-gray-300 mt-4 mb-4">
+                        <figure class=""><img class=" border border-gray-500" src="Images/Rectangle 4.png"
+                                alt="Movie" /></figure>
+                        <div class="card-body">
+
+                            <div class="flex flex-col lg:flex-row space-y-3">
+                                <p class="text-lg font-medium ">#Music</p>
+                                <p class="text-lg font-medium ">
+                                    Author: Awlad Hossain
+                                </p>
+                            </div>
+
+                            <h2 class="card-title font-bold">10 Kids Unaware of Their Halloween Costume</h2>
+                            <p class="text-[#131318]">It’s one thing to subject yourself to ha Halloween costume mishap
+                                because, hey that’s your prerogative</p>
+                            <br>
+
+                            <hr>
+
+
+
+                            <div class="flex mt-4">
+                                <p class="flex gap-2">
+                                    <img src="Images/comment.png" alt="">
+                                    <span class="font-medium text-[#13131880]">560</span>
+                                </p>
+                                <p class="flex gap-2">
+                                    <img src="Images/eye.png" alt="">
+                                    <span class="font-medium text-[#13131880]">1568</span>
+                                </p>
+                                <p class="flex gap-2">
+                                    <img src="Images/time.png" alt="">
+                                    <span class="font-medium text-[#13131880]">5 min</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- title div or append div -->
+                <div class="w-1/3 bg-[#F3F3F5] p-8 rounded-lg">
+                    <div class="flex justify-between items-center pb-6">
+                        <h3 class="text-xl font-bold">Title</h3>
+                        <p class="text-[#12132D99]">Mark as read <span>(0)</span> </p>
+                    </div>
+                    <!-- append korar div -->
+                    <div class="flex justify-between bg-white p-5 mt-4 mb-4 rounded-lg">
+                        <h3 class="font-semibold">10 Kids Unaware of Their Halloween Costume</h3>
+                        <p class="flex gap-2">
+                            <img src="Images/eye.png" alt="">
+                            <span class="font-medium text-[#13131880]">1568</span>
+                        </p>
+
+                    </div>
+                    <div class="flex justify-between bg-white p-5 rounded-lg mt-4 mb-4">
+                        <h3 class="font-semibold">10 Kids Unaware of Their Halloween Costume</h3>
+                        <p class="flex gap-2">
+                            <img src="Images/eye.png" alt="">
+                            <span class="font-medium text-[#13131880]">1568</span>
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
 
     </main>
 
     <footer>
+        <!-- <div class="card flex flex-col lg:flex-row card-side bg-base-100 shadow-xl p-4 border border-gray-300">
+            <figure class=""><img class=" border border-gray-500" src="Images/Rectangle 4.png" alt="Movie" /></figure>
+            <div class="card-body">
+
+                <div class="flex flex-col lg:flex-row space-y-3">
+                    <p class="text-lg font-medium ">#Music</p>
+                    <p class="text-lg font-medium ">
+                      Author: Awlad Hossain
+                    </p>
+                  </div>
+              
+              <h2 class="card-title font-bold">10 Kids Unaware of Their Halloween Costume</h2>
+              <p class="text-[#131318]">It’s one thing to subject yourself to ha Halloween costume mishap because, hey that’s your prerogative</p>
+                <br>
+                
+                <hr>
+  
+              
+
+              <div class="flex mt-4">
+                <p class="flex gap-2">
+                  <img src="Images/comment.png" alt="">
+                  <span class="font-medium text-[#13131880]">560</span>
+                </p>
+                <p class="flex gap-2">
+                  <img src="Images/eye.png" alt="">
+                  <span class="font-medium text-[#13131880]">1568</span>
+                </p>
+                <p class="flex gap-2">
+                  <img src="Images/time.png" alt="">
+                  <span class="font-medium text-[#13131880]">5 min</span>
+                </p>
+              </div>
+            </div>
+          </div> -->
 
     </footer>
 
     <!-- script files -->
+    <script src="js/script.js"></script>
 
 </body>
 
